@@ -1,0 +1,18 @@
+.house {
+    color: blue;
+    font-size: 14pt;
+}
+.hotel {
+    color: red;
+    font-size: 18pt;
+}
+.buildingButton {
+    border: none;
+    background: none;
+}
+.buildingUnselected {
+    text-decoration: none;
+}
+.buildingSelected {
+    text-decoration: underline;
+}
