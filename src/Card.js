@@ -31,7 +31,7 @@ export default function Card({ card, playerId, updateCardStatus }) {
                 <button className={"buildingButton house " + ((card.houses > 3) ? "buildingSelected" : "buildingUnselected")} onClick={(handleSetFourHouses)}>&#8962;</button>
                 <button className={"buildingButton hotel " + ((card.houses > 4) ? "buildingSelected" : "buildingUnselected")} onClick={(handleSetHotel)}>&#8962;</button>
                 <label>
-                    <input type="checkbox" onChange={handleMortgagedClick} />
+                    <input type="checkbox" checked={card.mortgaged} onChange={handleMortgagedClick} />
                     Mortgaged
                 </label>
                 

@@ -42,7 +42,7 @@ function App() {
       houses: 0,
       mortgaged: false
     }
-    player.cards = [...player.cards, {name: cardName}]
+    player.cards = [...player.cards, newCard]
     setPlayers(newPlayers)
   }
 
