@@ -29,7 +29,8 @@ function App() {
         name: name,
         money: money,
         isUpNext: false,
-        cards: []
+        cards: [],
+        location: null
       }
       return [...prevPlayers, newPlayer]
     })
@@ -70,6 +71,14 @@ function App() {
     const player = newPlayers.find(player => player.id === playerId)
     if (!player) return
     player.money = money
+    setPlayers(newPlayers)
+  }
+
+  function updatePlayerLocation(playerId, location) {
+    const newPlayers = [...players]
+    const player = newPlayers.find(player => player.id === playerId)
+    if (!player) return
+    player.location = location
     setPlayers(newPlayers)
   }
 
@@ -125,7 +134,7 @@ function App() {
         </div>
         <button className="btn btn-primary m-2" onClick={(handleSave)}>Save Game</button><button className="btn btn-primary m-2" onClick={(handleClear)}>Clear Game</button>
       </div>
-      <PlayerList players={players} addCardToPlayer={addCardToPlayer} updateCardStatus={updateCardStatus} updatePlayerMoney={updatePlayerMoney} />
+      <PlayerList players={players} updatePlayerLocation={updatePlayerLocation} addCardToPlayer={addCardToPlayer} updateCardStatus={updateCardStatus} updatePlayerMoney={updatePlayerMoney} />
     </div>
   );
 }
