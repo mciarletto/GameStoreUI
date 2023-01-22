@@ -1,10 +1,14 @@
 .house {
     color: blue;
-    font-size: 14pt;
+    font-size: 20pt;
 }
 .hotel {
     color: red;
-    font-size: 18pt;
+    font-size: 24pt;
+}
+.noHouses {
+    color: gray;
+    font-size: 20pt;
 }
 .buildingButton {
     border: none;
@@ -15,4 +19,8 @@
 }
 .buildingSelected {
     text-decoration: underline;
+}
+.hint {
+    color: gray;
+    font-style: italic;
 }
