@@ -82,11 +82,6 @@ function App() {
     setPlayers(newPlayers)
   }
 
-  function handleSave() {
-    console.log(JSON.stringify(players))
-    console.log(notes)
-  }
-
   function handleClear() {
     setPlayers([])
     setNotes('')
@@ -132,7 +127,7 @@ function App() {
         <div className="row">
           <label className="form-label">Notes<input className="form-control" ref={notesRef} type="text" onChange={(updateNotes)} value={notes} placeholder="Add additional notes" /></label>
         </div>
-        <button className="btn btn-primary m-2" onClick={(handleSave)}>Save Game</button><button className="btn btn-primary m-2" onClick={(handleClear)}>Clear Game</button>
+        <button className="btn btn-danger m-2" onClick={(handleClear)}>Clear Game</button>
       </div>
       <PlayerList players={players} updatePlayerLocation={updatePlayerLocation} addCardToPlayer={addCardToPlayer} updateCardStatus={updateCardStatus} updatePlayerMoney={updatePlayerMoney} />
     </div>
