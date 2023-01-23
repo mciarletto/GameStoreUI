@@ -4,6 +4,8 @@ This is a tool to let you record all necessary information to the state of a gam
 
 This is a work in progress.  Currently, a game is saved locally.  The next step is to store and retrieve games in a database, and this is a working step in that direction.
 
+To try this project, it can be run locally, and it can also be seen at [http://www.mciarletto.com/gamestache/](http://www.mciarletto.com/gamestache/).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
