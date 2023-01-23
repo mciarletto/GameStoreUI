@@ -1,3 +1,9 @@
+# About Gamestache
+
+This is a tool to let you record all necessary information to the state of a game of Monopoly so you can put it away and pick up where you left off another time.
+
+This is a work in progress.  Currently, a game is saved locally.  The next step is to store and retrieve games in a database, and this is a working step in that direction.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
