@@ -1,10 +1,9 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
 import CardList from './CardList'
 
 
 export default function Player({ player, addCardToPlayer, updateCardStatus, updatePlayerMoney, updatePlayerLocation }) {
 
-    const [newCardName, setNewCardName] = useState("")
     const newCardRef = useRef();
 
     function handleAddCard(e) {

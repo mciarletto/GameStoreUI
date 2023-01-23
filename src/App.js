@@ -13,7 +13,6 @@ function App() {
   const [notes, setNotes] = useState(
     JSON.parse(localStorage.getItem(STORAGE_NOTES)) || []
   )
-  const [uid, setUid] = useState('')
 
   const newPlayerNameRef = useRef()
   const newStartingMoneyRef = useRef()

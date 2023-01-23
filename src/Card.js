@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 const HOTEL_HOUSE_COUNT = 5
 
